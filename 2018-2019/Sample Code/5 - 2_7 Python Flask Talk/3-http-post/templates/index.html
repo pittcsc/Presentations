@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <ul>
+        {% for user in users %}
+            <li>{{ user }}</li>
+        {% endfor %}
+    </ul>
+    <div>
+        <h3>Add user</h3>
+        <form action="/add" method="post">
+            <input name="username" placeholder="Username" /><input type="submit" value="Add" />
+        </form>
+    </div>
+
+</body>
+</html>
